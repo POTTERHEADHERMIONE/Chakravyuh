@@ -3,7 +3,7 @@ from django.http import HttpResponse
 import environ
 import os
 def display_image(request, pk):
-    correct_answer = 92647925689224332 
+    correct_answer = os.environ.get('CLUE_KEY')
 
     try:
         user_answer = int(pk)
