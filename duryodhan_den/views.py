@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-
+import environ
 def display_image(request, pk):
     correct_answer = 92647925689224332 
 
@@ -8,7 +8,7 @@ def display_image(request, pk):
         user_answer = int(pk)
 
         if user_answer == correct_answer:
-            image_url = "https://res.cloudinary.com/dhkv5hazp/image/upload/v1699938682/node5_xghvua.png"  
+            image_url = env(‘SECRET_KEY’)
             return render(request, 'photo.html', {'image_url': image_url})
         else:
             return HttpResponse("Wrong answer. Please try again.")
