@@ -3,11 +3,9 @@ from django.http import HttpResponse
 import environ
 import os
 def display_image(request, pk):
-    correct_answer = os.environ.get('CLUE_KEY')
-    print(correct_answer)
+    correct_answer = int(os.environ.get('CLUE_KEY'))
     try:
         user_answer = int(pk)
-        print(user_answer)
         if user_answer == correct_answer:
             url = os.environ.get('SECRET_KEY')
             image_url = url
