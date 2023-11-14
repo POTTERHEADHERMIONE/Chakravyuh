@@ -11,5 +11,7 @@ May your wit rival the gods' divine, as you embark on this journey's twine. To e
 
 Strategize, explore, and diligently pursue, for the keys to triumph, seeker, reside in you.
 
+For guidance, may this link serve thee well: [Chakravyuh Maze](https://chakravyuh.onrender.com/)
+
 With anticipation,
 Duryodhan
