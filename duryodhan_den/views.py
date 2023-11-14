@@ -4,10 +4,10 @@ import environ
 import os
 def display_image(request, pk):
     correct_answer = os.environ.get('CLUE_KEY')
-
+    print(correct_answer)
     try:
         user_answer = int(pk)
-
+        print(user_answer)
         if user_answer == correct_answer:
             url = os.environ.get('SECRET_KEY')
             image_url = url
